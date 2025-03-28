@@ -38,7 +38,7 @@ const Dashboard = () => {
   const [analyticsMetadata, setAnalyticsMetadata] = useState(null);
 
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchData = async () => {   //fetching data from the server
       try {
         const token = sessionStorage.getItem('token') || localStorage.getItem('token');
         if (!token) {
